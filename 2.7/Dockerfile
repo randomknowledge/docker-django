@@ -5,20 +5,21 @@ RUN apt-get update \
         apt-transport-https \
         postgresql-client \
         wget \
-		bzip2 \
-		locales \
-		libpq-dev \
-		libjpeg-dev \
-		liblcms2-dev \
-		libfreetype6 \
-		libfontconfig \
-		zlib1g-dev \
-		libxml2-dev \
-		libxslt1-dev \
-		fontforge \
-		ttfautohint \
-		ruby-dev \
-		rubygems \
+	bzip2 \
+	locales \
+	libpq-dev \
+	libjpeg-dev \
+	liblcms2-dev \
+	libfreetype6 \
+	libfontconfig \
+	zlib1g-dev \
+	libxml2-dev \
+	libxslt1-dev \
+	fontforge \
+	ttfautohint \
+	ruby-dev \
+	rubygems \
+	gettext \
     && apt-get autoremove -y \
 	&& apt-get clean all \
 	&& rm -rf /var/lib/apt/lists/*
