@@ -12,6 +12,8 @@ RUN apt-get update \
 	liblcms2-dev \
 	libfreetype6 \
 	libfontconfig \
+	libpcre3 \
+	libpcre3-dev \
 	zlib1g-dev \
 	libxml2-dev \
 	libxslt1-dev \
