@@ -19,6 +19,7 @@ RUN apt-get update \
 	libxslt1-dev \
 	fontforge \
 	ttfautohint \
+	redis-tools \
 	ruby-dev \
 	rubygems \
 	gettext \
