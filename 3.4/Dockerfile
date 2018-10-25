@@ -23,6 +23,7 @@ RUN apt-get update \
 	ruby-dev \
 	rubygems \
 	gettext \
+	gdal-bin \
     && apt-get autoremove -y \
 	&& apt-get clean all \
 	&& rm -rf /var/lib/apt/lists/*
