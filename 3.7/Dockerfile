@@ -24,6 +24,7 @@ RUN apt-get update \
 	rubygems \
 	gettext \
 	gdal-bin \
+	awscli \
     && apt-get autoremove -y \
 	&& apt-get clean all \
 	&& rm -rf /var/lib/apt/lists/*
