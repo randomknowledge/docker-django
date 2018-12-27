@@ -47,3 +47,4 @@ RUN pip install --ignore-installed --upgrade setuptools wheel pip
 RUN mkdir -p /web/media /web/static /web/src
 
 CMD ["bash"]
+
