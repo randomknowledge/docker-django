@@ -24,7 +24,6 @@ RUN apt-get update \
 	rubygems \
 	gettext \
 	gdal-bin \
-	awscli \
     && apt-get autoremove -y \
 	&& apt-get clean all \
 	&& rm -rf /var/lib/apt/lists/*
@@ -42,7 +41,7 @@ RUN apt-get -y install nodejs yarn
 
 RUN groupadd -r wsgi --gid=1000
 RUN useradd -r -g wsgi --uid=1000 wsgi
-RUN pip install --ignore-installed --upgrade setuptools wheel pip
+RUN pip install --ignore-installed --upgrade setuptools wheel pip awscli awsebcli
 
 RUN mkdir -p /web/media /web/static /web/src
 
